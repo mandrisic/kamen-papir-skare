@@ -1,40 +1,33 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 @font-face {
   src: url(font/SendFlowers-Regular.ttf);
-  font-family: Flowers;
-}
-
+  font-family: Flowers; }
 @font-face {
   src: url(font/UnicaOne-Regular.ttf);
-  font-family: Unica;
-}
-
+  font-family: Unica; }
 section {
   height: 100vh;
-  background-color: rgb(0, 0, 0);
-  font-family: Unica;
-}
+  background-color: black;
+  font-family: Unica; }
 
 .score {
   color: white;
   height: 20vh;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
+  align-items: center; }
+
 .score h2 {
-  font-size: 30px;
-}
+  font-size: 30px; }
+
 .score p {
   text-align: center;
   padding: 10px;
-  font-size: 25px;
-}
+  font-size: 25px; }
 
 .intro {
   color: white;
@@ -43,8 +36,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  transition: opacity 0.5s ease;
-}
+  transition: opacity 0.5s ease; }
 
 .intro h1 {
   font-size: 50px;
@@ -52,8 +44,8 @@ section {
   background: #fe0065;
   background: linear-gradient(to right, #fe0065 0%, #001df5 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  -webkit-text-fill-color: transparent; }
+
 .intro button,
 .match button {
   width: 150px;
@@ -65,16 +57,14 @@ section {
   font-family: Unica;
   background: #fe0065;
   border-radius: 3px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .match {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity 0.8s ease 0.8s;
-}
+  transition: opacity 0.8s ease 0.8s; }
 
 .winner {
   color: white;
@@ -84,12 +74,10 @@ section {
   background: #fe0065;
   background: linear-gradient(to right, #fe0065 0%, #001df5 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  -webkit-text-fill-color: transparent; }
 
 img {
-  width: 300px;
-}
+  width: 300px; }
 
 .hands,
 .options {
@@ -97,199 +85,141 @@ img {
   justify-content: space-around;
   align-items: center;
   font-family: Unica;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 div.fadeOut {
   opacity: 0;
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 div.fadeIn {
   opacity: 1;
-  pointer-events: all;
-}
+  pointer-events: all; }
 
 @keyframes shakePlayer {
   0% {
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   15% {
-    transform: translateY(-50px);
-  }
+    transform: translateY(-50px); }
   25% {
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   35% {
-    transform: translateY(-50px);
-  }
+    transform: translateY(-50px); }
   50% {
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   65% {
-    transform: translateY(-50px);
-  }
+    transform: translateY(-50px); }
   75% {
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   85% {
-    transform: translateY(-50px);
-  }
+    transform: translateY(-50px); }
   100% {
-    transform: translateY(0px);
-  }
-}
-
+    transform: translateY(0px); } }
 @keyframes shakeComputer {
   0% {
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   15% {
-    transform: translateY(-50px);
-  }
+    transform: translateY(-50px); }
   25% {
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   35% {
-    transform: translateY(-50px);
-  }
+    transform: translateY(-50px); }
   50% {
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   65% {
-    transform: translateY(-50px);
-  }
+    transform: translateY(-50px); }
   75% {
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   85% {
-    transform: translateY(-50px);
-  }
+    transform: translateY(-50px); }
   100% {
-    transform: translateY(0px);
-  }
-}
+    transform: translateY(0px); } }
+@media (max-width: 480px) {
+  .score h2 {
+    font-size: 15px; }
 
-@media (max-width: 480px){
+  .player-score p {
+    color: #fe0065; }
 
- .score h2{
-  font-size: 15px;
- }
+  .computer-score p {
+    color: #001df5; }
 
- .player-score p{
-  color: #fe0065;
- }
+  .intro h1 {
+    font-size: 30px; }
 
- .computer-score p{
-  color: #001df5;
- }
+  .intro button {
+    width: 120px;
+    height: 40px;
+    font-size: 18px; }
 
- .intro h1 {
-  font-size: 30px;
- }
+  .winner {
+    font-size: 30px;
+    margin-top: 15vh; }
 
- .intro button {
-  width: 120px;
-  height: 40px; 
-  font-size: 18px;
- }
+  .hands {
+    display: grid;
+    grid-template-areas: "...   player-hand   ..." "...   computer-hand   ..."; }
 
- .winner {
-  font-size: 30px;
-  margin-top: 15vh;
- }
+  .hands img {
+    width: 150px; }
 
- .hands {
-  display: grid;
-  grid-template-areas: 
-  "...   player-hand   ..."
-  "...   computer-hand   ...";
- }
+  .player-hand {
+    grid-area: player-hand;
+    margin-top: 2vh; }
 
- .hands img {
-  width: 150px;
- }
+  .computer-hand {
+    grid-area: computer-hand; }
 
- .player-hand {
-  grid-area: player-hand;
-  margin-top: 2vh;
- }
+  .options {
+    display: grid;
+    grid-template-areas: "...   kamen   ..." "...   papir   ..." "...   skare   ..."; }
 
- .computer-hand {
-  grid-area: computer-hand;
- }
+  .kamen {
+    grid-area: kamen;
+    margin-bottom: 2vh; }
 
- .options {
-  display: grid;
-  grid-template-areas: 
-  "...   kamen   ..."
-  "...   papir   ..."
-  "...   skare   ...";
- }
+  .options button {
+    width: 120px;
+    height: 40px;
+    font-size: 18px; }
 
- .kamen {
-  grid-area: kamen;
-  margin-bottom: 2vh;
- }
+  .papir {
+    grid-area: papir;
+    margin: 0;
+    margin-bottom: 2vh; }
 
- .options button {
-  width: 120px;
-  height: 40px; 
-  font-size: 18px;
- }
+  .skare {
+    grid-area: skare; } }
+@media (min-width: 481px) and (max-width: 768px) {
+  .score h2 {
+    font-size: 20px; }
 
- .papir {
-  grid-area: papir;
-  margin: 0;
-  margin-bottom: 2vh;
- }
+  .player-score p {
+    color: #fe0065; }
 
- .skare {
-  grid-area: skare;
- }
-}
-
- @media  (min-width: 481px) and (max-width: 768px){
-
-  .score h2{
-   font-size: 20px;
-  }
- 
-  .player-score p{
-   color: #fe0065;
-  }
- 
-  .computer-score p{
-   color: #001df5;
-  }
+  .computer-score p {
+    color: #001df5; }
 
   img {
-    width: 200px;
-  }
- 
+    width: 200px; }
+
   .intro h1 {
-   font-size: 50px;
-  }
- 
+    font-size: 50px; }
+
   .intro button {
-   width: 130px;
-   height: 45px; 
-   font-size: 22px;
-  }
- 
+    width: 130px;
+    height: 45px;
+    font-size: 22px; }
+
   .winner {
-   font-size: 40px;
-   margin-top: 15vh;
-  }
+    font-size: 40px;
+    margin-top: 15vh; }
 
   .options button {
     width: 130px;
-    height: 45px; 
-    font-size: 22px;
-  }
+    height: 45px;
+    font-size: 22px; }
 
   .papir {
-    margin: 0 10px 0 10px;
-  }
- 
-}
+    margin: 0 10px 0 10px; } }
+
+/*# sourceMappingURL=stil.css.map */
