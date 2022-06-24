@@ -1,0 +1,25 @@
+{
+  "name": "kamen-papir-skare",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel js --out-dir trans"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandrisic/kamen-papir-skare.git"
+  },
+  "author": "Mirna Andrišić",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandrisic/kamen-papir-skare/issues"
+  },
+  "homepage": "https://github.com/mandrisic/kamen-papir-skare#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2"
+  }
+}
