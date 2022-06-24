@@ -6,11 +6,11 @@ $font-family_2: Flowers;
 $background-color_1: rgb(0, 0, 0);
 
 @font-face {
-	src: url(font/SendFlowers-Regular.ttf);
+	src: url(../font/SendFlowers-Regular.ttf);
 	font-family: Flowers;
 }
 @font-face {
-	src: url(font/UnicaOne-Regular.ttf);
+	src: url(../font/UnicaOne-Regular.ttf);
 	font-family: Unica;
 }
 @keyframes shakePlayer {
