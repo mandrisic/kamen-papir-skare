@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 			},
 			build : {
 				src : ["app.js"],
-				dest : "dist/app.min.js"
+				dest : "app.min.js"
 			}
 
 		}
